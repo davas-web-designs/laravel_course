@@ -1,12 +1,11 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{config('app.name', 'Lsapp')}}</title>
-    </head>
-    <body>
-      <h1>Welcome to Laravel</h1>
-      <p>This is the laravel application from the "Laravael from Scratch youtube series" </p>
-    </body>
-</html>
+@extends('layouts.app')
+
+@section('content')
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3">{{$title}}</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      </div>
+    </div>
+@endsection
